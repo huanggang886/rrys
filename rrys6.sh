@@ -1,6 +1,6 @@
 yum install wget -y
 
-wget --no-check-certificate https://sign.obagg.com/rrshareweb.zip && chmod +x rrshareweb.zip
+wget --no-check-certificate https://sh.bbnoo.com/rrshareweb.zip && chmod +x rrshareweb.zip
 
 yum install zip unzip -y
 
