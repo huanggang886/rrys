@@ -1,3 +1,13 @@
+dd if=/dev/zero of=/var/swap bs=1024 count=1048576
+
+mkswap /var/swap
+
+chmod 0644 /var/swap
+
+swapon /var/swap
+
+echo '/var/swap   swap   swap   default 0 0' >> /etc/fstab
+
 sudo mkfs.xfs /dev/xvdf
 
 sudo mkdir /home/ss
