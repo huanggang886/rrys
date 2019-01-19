@@ -10,9 +10,9 @@ echo '/var/swap   swap   swap   default 0 0' >> /etc/fstab
 
 sudo mkfs.xfs /dev/xvdf
 
-sudo mkdir /home/ss
+sudo mkdir /opt/work/store
 
-sudo mount /dev/xvdf  /home/ss
+sudo mount /dev/xvdf  /opt/work/store
 
 yum install wget -y
 
@@ -24,7 +24,7 @@ unzip rrshareweb.zip
 
 chmod -R 777 /root/rrshareweb
 
-chmod -R 777 /home/ss
+chmod -R 777 /opt/work/store
 
 cd rrshareweb
 
